@@ -26,6 +26,10 @@ public class Stat
 
     public float MultiplierCap = 2;
 
+    // Em uma versão futura dá pra criar uma classe de "bônus" ao invés de multiplicador, e essa classe ter um enum q decide
+    // se esse bônus é multiplicativo ou aditivo, com o valor do modificador e um nome pra identificar.
+    // Com uma classe única pros bônus fica mais fácil a implementação de um menu de efeitos como skyrim.
+    // Classe "Bonus" teria: Type(enum), name(string), description(string), totalValue(readonly float)
     [SerializeField] List<StatMultiplier> Multipliers;
 
     public Stat (string _name, float _modValue)

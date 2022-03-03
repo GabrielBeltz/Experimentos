@@ -7,12 +7,12 @@ public class StatsHolder : MonoBehaviour
     public List<Stat> Stats;
 
     private void Start() {
-        Stats.Add(new Stat("Strength", 1f));
-        Stats.Add(new Stat("Agility", 0f));
-        Stats.Add(new Stat("Inteligence", 3f));
-        Stats.Add(new Stat("Wisdom", 4f));
-        Stats.Add(new Stat("Personality", 4f));
-        Stats.Add(new Stat("Luck", 6f));
+        Stats.Add(new Stat("Strength", Random.Range(0, 9f)));
+        Stats.Add(new Stat("Agility", Random.Range(0, 9f)));
+        Stats.Add(new Stat("Inteligence", Random.Range(0, 9f)));
+        Stats.Add(new Stat("Wisdom", Random.Range(0, 9f)));
+        Stats.Add(new Stat("Personality", Random.Range(0, 9f)));
+        Stats.Add(new Stat("Luck", Random.Range(0, 9f)));
 
         DebugAllStats();
     }
